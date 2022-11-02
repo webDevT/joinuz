@@ -1,13 +1,185 @@
 @import "vars"
-@import "fonts"
 
 //start global style
 body 
     font-family: $main-font
-    font-weight: 300
-
+    font-weight: 300  
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+.content 
+     //min-height: 100vh
+     position: relative
+     //padding-bottom: 13.705vw
+     box-sizing: border-box
+     background: $main-color
 //end global style
 
+//start footer style
+.footer 
+    background: #fff
+    display: flex 
+    justify-content: center
+    align-items: flex-end
+    width: 100%
+    padding-bottom: 2.422vw
+    padding-top: 4.896vw
+    clip-path: polygon(0 5.55vw, 100% 0, 100% 100%, 0% 100%)
+.logo 
+    width: 26.615vw
+
+//end footer style
+
+//start card content
+.card-content 
+    padding: 3.177vw 3.385vw 1.953vw 6.094vw
+    position: relative
+    transition: all 0.5s
+.photo-wrapper 
+    width: 26.094vw
+    height: 26.094vw
+    object-fit: cover 
+    object-position: center
+    
+    img 
+        width: 100%
+        border-radius: 50% 
+        border: 0.521vw solid #fff
+        object-fit: cover 
+        object-position: center
+.card-wrapper 
+    padding-top: 3.073vw
+    display: flex
+.info-wrapper 
+    padding-left: 4.167vw
+.name
+    font-size: 4.167vw
+    color: #fff
+    font-weight: 700
+.position 
+    font-size: 2.865vw
+    font-weight: 700
+.contact-info__item 
+    margin-top: 1.094vw
+    display: flex
+    color: #fff
+    font-size: 2.500vw
+    text-decoration: none 
+    align-items: center
+.contact-info__item-icon
+    width: 3.438vw
+    display: flex 
+    align-items: center 
+    justify-content: flex-start
+    img 
+        width: 1.927vw
+.line 
+    position: absolute
+    bottom: -2.5vw
+    right: 14vw
+    width: 17.031vw
+//end card content
+
+//start buttons wrapper
+.buttons-wrapper
+    position: absolute 
+    top: 3.177vw
+    right: 3.385vw
+.button 
+    background: #fff
+    display: flex 
+    align-items: center
+    color: $main-color
+    padding: 0.833vw 0.833vw 0.833vw 1.458vw
+    box-shadow: 0px 0.156vw 0.313vw rgba(0, 0, 0, 0.16)
+    border-radius: 0.5vw
+    font-weight: 700
+    width: 14.323vw
+    height: 5.151vw
+    box-sizing: border-box
+    font-size: 1.563vw
+    cursor: pointer
+    margin-bottom: 1.563vw
+    img 
+
+        width: 2.5vw
+        margin-right: 1.510vw 
+        display: block
+.social-wrapper
+    display: flex 
+    align-items: center
+    margin-top: 11.563vw
+.social-item 
+    display: flex 
+    align-items: center 
+    justify-content: center
+    background: #fff
+    width: 4.219vw
+    height: 4.219vw
+    margin-right: 0.990vw
+    border-radius: 0.5vw
+    img 
+        width: 2.135vw
+        max-height: 2.135vw
+//end buttons wrapper
+
+//start contact modal style
+.card-content.active
+    opacity: 0.5
+    .buttons-wrapper 
+        opacity: 0
+   
+.contact-modal
+    width: 100% 
+    height: 100% 
+    position: absolute 
+    top: 0
+    left: 0
+    z-index: 99
+    padding: 1.458vw 1.823vw
+    display: none
+    box-sizing: border-box
+.modal-title
+    text-align: center 
+    font-size: 1.823vw
+    font-weight: 700 
+    color: #fff
+.back 
+    width: 2.083vw
+    cursor: pointer
+    position: absolute 
+    top: 1.406vw 
+    left: 1.302vw
+.modal-item
+    width: 14.219vw
+    height: 14.219vw
+    background: #fff
+    margin: 0.547vw
+    border-radius: 1vw
+    display: flex 
+    flex-direction: column 
+    align-items: center 
+    justify-content: flex-end
+    padding: 1.510vw
+    box-sizing: border-box
+    img 
+        width: 7.135vw
+        display: block 
+        margin-bottom: 1.4vw
+.modal-content 
+    display: flex 
+    flex-wrap: wrap
+    width: 31vw
+.modal-content__wrapper
+    width: 100% 
+    display: flex 
+    justify-content: flex-end
+.modal-item__title
+    font-size: 1.302vw
+    font-weight: 500
+    color: $main-color
+//end contact modal style
 
 @import "media"
 

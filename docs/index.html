@@ -21,7 +21,7 @@
 	</div>
 	<div class="info-wrapper">
 		<div class="name">
-			Joy Buijsse
+			Lorem ipsum dolor sit amet 
 		</div>
 		<div class="position">
 			Marketing Manager
@@ -140,14 +140,14 @@ opslaan
 			</div>
 		</div>
 
-		<div class="modal-item">
+		<div class="modal-item modal-item--mail">
 			<img src="img/email2.svg" alt="">
 			<div class="modal-item__title">
 				E-mail
 			</div>
 		</div>
 
-		<div class="modal-item">
+		<div class="modal-item modal-item--qr">
 			<img src="img/qr.svg" alt="">
 			<div class="modal-item__title">
 				QR-code
@@ -165,7 +165,30 @@ opslaan
 	
 </div>
 
+<!-- start qr modal	 -->
+<div class="qr-modal">
+	<img src="img/close.svg" alt="" class="close-icon">
+	<div class="qr-modal__content">
+		<img src="img/qr.svg" alt="">
+	</div>
 	
+</div>
+<!-- end qr modal -->
+
+<!-- start mail modal	 -->
+<div class="mail-modal">
+	<img src="img/close.svg" alt="" class="close-icon">
+	<div class="mail-modal__content">
+		<input type="text" placeholder="E-mail recipient" class="input">
+		<input type="text" placeholder="Name recipient" class="input">
+		<input type="text" placeholder="Subject" class="input">
+		<textarea name="" id="" cols="30" rows="10" placeholder="Message" class="textarea"></textarea>
+		<input type="submit" class="send" value="send">
+	</div>
+	
+</div>
+<!-- end mail modal -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
